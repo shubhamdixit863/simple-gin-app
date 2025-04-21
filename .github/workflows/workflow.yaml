@@ -43,6 +43,6 @@ jobs:
             cd /home/ubuntu/simple-gin-app
             sudo docker stop ginapi || true
             sudo docker build -t ginapi .
-            sudo docker run -p 8090:8090 ginapi
+            sudo docker run -d -p 8090:8090 ginapi
           EOF
         shell: bash
