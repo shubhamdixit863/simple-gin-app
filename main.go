@@ -8,7 +8,7 @@ import (
 	"session20-gin-app/middlewares"
 )
 
-//go build -o myapp main.go
+// go build -o myapp main.go
 // nohup ./myapp > myapp.log 2>&1 &
 func PingHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
