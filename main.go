@@ -12,7 +12,7 @@ import (
 // nohup ./myapp > myapp.log 2>&1 &
 
 // sudo docker run -d -p 8090:8090 ginapi
-//sudo docker build -t ginapi .
+// sudo docker build -t ginapi .
 func PingHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "pong",
